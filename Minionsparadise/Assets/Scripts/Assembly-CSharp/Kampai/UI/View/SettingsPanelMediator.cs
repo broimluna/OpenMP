@@ -172,6 +172,7 @@ namespace Kampai.UI.View
 			prefs.GetDevicePrefs().Language = nextLang;
 			saveDevicePrefsSignal.Dispatch();
 			localService.Initialize(nextLang);
+			localService.Update();
 			UpdateLanguageText();
 			languageChangedSignal.Dispatch();
 		}

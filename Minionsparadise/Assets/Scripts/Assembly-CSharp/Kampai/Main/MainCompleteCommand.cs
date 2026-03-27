@@ -93,8 +93,6 @@ namespace Kampai.Main
 			int quantity2 = (int)playerService.GetQuantity(global::Kampai.Game.StaticItem.TIER_GATE_ID);
 			dlcService.SetPlayerDLCTier(quantity);
 			global::Kampai.Util.TimeProfiler.StartSection("loading scenes");
-			logger.Info("MainCompleteCommand: Dispatching loadDevicePrefsSignal...");
-			loadDevicePrefsSignal.Dispatch();
 			logger.Info("MainCompleteCommand: Dispatching loadAudioSignal...");
 			loadAudioSignal.Dispatch();
 			logger.Info("MainCompleteCommand: Starting PostExternalScenes coroutine...");
@@ -142,7 +140,6 @@ namespace Kampai.Main
 			// nimbleOTSignal.Dispatch();
 			clientHealthService.MarkMeterEvent("AppFlow.AppStart");
 			telemetryService.Send_Telemetry_EVT_USER_GAME_LOAD_FUNNEL("100 - Load Complete", playerService.SWRVEGroup, dlcService.GetDownloadQualityLevel());
-			loadDevicePrefsSignal.Dispatch();
 			logTapEventMetricsSignal.Dispatch();
 			setupPushNotificationsSignal.Dispatch();
 			socialEventService.GetPastEventsWithUnclaimedReward();
