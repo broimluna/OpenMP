@@ -260,17 +260,12 @@ namespace Kampai.UI.View
 		[global::UnityEngine.SerializeField]
 		private global::UnityEngine.Sprite m_maskSprite;
 
-		private static readonly global::UnityEngine.Vector2[] s_VertScratch = new global::UnityEngine.Vector2[4];
-
-		private static readonly global::UnityEngine.Vector2[] s_Uv = new global::UnityEngine.Vector2[4];
-
-		private static readonly global::UnityEngine.Vector2[] s_Xy = new global::UnityEngine.Vector2[4];
-
-		private static readonly global::UnityEngine.Vector2[] s_UVScratch = new global::UnityEngine.Vector2[4];
-
-		private static readonly global::UnityEngine.Vector2[] s_MaskUVScratch = new global::UnityEngine.Vector2[4];
-
-		private static readonly global::UnityEngine.Vector2[] s_MaskUv = new global::UnityEngine.Vector2[4];
+		private readonly global::UnityEngine.Vector2[] s_VertScratch = new global::UnityEngine.Vector2[4];
+		private readonly global::UnityEngine.Vector2[] s_Uv = new global::UnityEngine.Vector2[4];
+		private readonly global::UnityEngine.Vector2[] s_Xy = new global::UnityEngine.Vector2[4];
+		private readonly global::UnityEngine.Vector2[] s_UVScratch = new global::UnityEngine.Vector2[4];
+		private readonly global::UnityEngine.Vector2[] s_MaskUVScratch = new global::UnityEngine.Vector2[4];
+		private readonly global::UnityEngine.Vector2[] s_MaskUv = new global::UnityEngine.Vector2[4];
 
 		private static readonly global::Kampai.Util.MaterialCache m_cache = new global::Kampai.Util.MaterialCache();
 
@@ -799,7 +794,7 @@ namespace Kampai.UI.View
 			return new global::UnityEngine.Vector4(pixelAdjustedRect.x + pixelAdjustedRect.width * vector3.x, pixelAdjustedRect.y + pixelAdjustedRect.height * vector3.y, pixelAdjustedRect.x + pixelAdjustedRect.width * vector3.z, pixelAdjustedRect.y + pixelAdjustedRect.height * vector3.w);
 		}
 
-		private static void RadialCut(global::UnityEngine.Vector2[] xy, float cos, float sin, bool invert, int corner)
+		private void RadialCut(global::UnityEngine.Vector2[] xy, float cos, float sin, bool invert, int corner)
 		{
 			int num = (corner + 1) % 4;
 			int num2 = (corner + 2) % 4;
@@ -876,7 +871,7 @@ namespace Kampai.UI.View
 			}
 		}
 
-		private static bool RadialCut(global::UnityEngine.Vector2[] xy, global::UnityEngine.Vector2[] uv, global::UnityEngine.Vector2[] maskUV, float fill, bool invert, int corner)
+		private bool RadialCut(global::UnityEngine.Vector2[] xy, global::UnityEngine.Vector2[] uv, global::UnityEngine.Vector2[] maskUV, float fill, bool invert, int corner)
 		{
 			if (fill < 0.001f)
 			{
@@ -909,7 +904,7 @@ namespace Kampai.UI.View
 			material = global::Kampai.Util.KampaiResources.Load<global::UnityEngine.Material>("StencilAlphaMaskMat");
 		}
 
-		private static void SetupVBO(global::UnityEngine.UI.VertexHelper vertexHelper, global::UnityEngine.UIVertex simpleVert)
+		private void SetupVBO(global::UnityEngine.UI.VertexHelper vertexHelper, global::UnityEngine.UIVertex simpleVert)
 		{
 			int currentVertCount = vertexHelper.currentVertCount;
 			for (int i = 0; i < 4; i++)
@@ -920,7 +915,7 @@ namespace Kampai.UI.View
 			vertexHelper.AddTriangle(currentVertCount + 2, currentVertCount + 3, currentVertCount);
 		}
 
-		private static void AddQuad(global::UnityEngine.UI.VertexHelper vertexHelper, global::UnityEngine.Vector2 posMin, global::UnityEngine.Vector2 posMax, global::UnityEngine.Color32 color, global::UnityEngine.Vector2 uvMin, global::UnityEngine.Vector2 uvMax, global::UnityEngine.Vector2 uvMaskMin, global::UnityEngine.Vector2 uvMaskMax)
+		private void AddQuad(global::UnityEngine.UI.VertexHelper vertexHelper, global::UnityEngine.Vector2 posMin, global::UnityEngine.Vector2 posMax, global::UnityEngine.Color32 color, global::UnityEngine.Vector2 uvMin, global::UnityEngine.Vector2 uvMax, global::UnityEngine.Vector2 uvMaskMin, global::UnityEngine.Vector2 uvMaskMax)
 		{
 			int currentVertCount = vertexHelper.currentVertCount;
 			vertexHelper.AddVert(new global::UnityEngine.Vector3(posMin.x, posMin.y, 0f), color, new global::UnityEngine.Vector2(uvMin.x, uvMin.y), new global::UnityEngine.Vector2(uvMaskMin.x, uvMaskMin.y));

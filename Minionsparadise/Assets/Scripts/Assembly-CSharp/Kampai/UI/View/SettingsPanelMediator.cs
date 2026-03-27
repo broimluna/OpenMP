@@ -54,6 +54,11 @@ namespace Kampai.UI.View
 		[Inject]
 		public global::Kampai.UI.View.PopupMessageSignal popupMessageSignal { get; set; }
 
+		[Inject]
+		public global::Kampai.Main.LanguageChangedSignal languageChangedSignal { get; set; }
+
+		private static readonly string[] LANGUAGES = new string[] { "en", "fr", "de", "es", "it", "pt", "nl", "ko", "ru", "ja", "zh-cn", "zh-tw", "tr", "id", "lolcat" };
+
 		private int buildNumberClickCount;
 
 		private float lastBuildNumberClickTime;
@@ -72,6 +77,10 @@ namespace Kampai.UI.View
 			view.notificationsOffButton.ClickedSignal.AddListener(NotificationsOffButton);
 			view.DLCButton.ClickedSignal.AddListener(DLCButton);
 			view.doubleConfirmButton.ClickedSignal.AddListener(OnDoubleConfirm);
+			if (view.languageButton != null)
+			{
+				view.languageButton.ClickedSignal.AddListener(OnLanguageButtonClicked);
+			}
 			Init();
 			setServer(ServerEnv);
 			setBuild(clientVersion.GetClientVersion());
@@ -97,6 +106,10 @@ namespace Kampai.UI.View
 			view.DLCButton.ClickedSignal.RemoveListener(DLCButton);
 			view.volumeSliderChangedSignal.RemoveListener(OnVolumeChanged);
 			view.doubleConfirmButton.ClickedSignal.RemoveListener(OnDoubleConfirm);
+			if (view.languageButton != null)
+			{
+				view.languageButton.ClickedSignal.RemoveListener(OnLanguageButtonClicked);
+			}
 		}
 
 		private void Init()
@@ -130,6 +143,37 @@ namespace Kampai.UI.View
 				view.ToggleNotificationsOn(true);
 			}
 			view.doubleConfirmText.text = localService.GetString("DoubleConfirm");
+			UpdateLanguageText();
+		}
+
+		private void UpdateLanguageText()
+		{
+			if (view.languageText != null)
+			{
+				view.languageText.text = localService.GetLanguage().ToUpper();
+			}
+		}
+
+		private void OnLanguageButtonClicked()
+		{
+			string language = prefs.GetDevicePrefs().Language;
+			if (string.IsNullOrEmpty(language))
+			{
+				language = global::Kampai.Util.Native.GetDeviceLanguage();
+			}
+			language = language.ToLower();
+			int num = global::System.Array.IndexOf<string>(LANGUAGES, language);
+			if (num == -1)
+			{
+				num = 0;
+			}
+			num = (num + 1) % LANGUAGES.Length;
+			string nextLang = LANGUAGES[num];
+			prefs.GetDevicePrefs().Language = nextLang;
+			saveDevicePrefsSignal.Dispatch();
+			localService.Initialize(nextLang);
+			UpdateLanguageText();
+			languageChangedSignal.Dispatch();
 		}
 
 		private void OnVolumeChanged(bool isMusicSlider)

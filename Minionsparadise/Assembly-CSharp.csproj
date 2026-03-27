@@ -1,5 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -19,10 +22,11 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_5;UNITY_5_3;UNITY_5;UNITY_64;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_0;UNITY_2017_4;UNITY_2017;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,17 +35,19 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/5.3.5p4/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/5.3.5p4/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -84,12 +90,12 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Com\Google\Android\Gms\Games\Stats\PlayerStats.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Com\Google\Android\Gms\Games\Stats\PlayerStatsObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Com\Google\Android\Gms\Games\Stats\Stats.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Com\Google\Android\Gms\Games\Stats\StatsObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Com\Google\Android\Gms\Games\Stats\Stats_LoadPlayerStatsResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Com\Google\Android\Gms\Games\Stats\Stats_LoadPlayerStatsResultObject.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\DLCLevelChangedCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Com\Google\Android\Gms\Games\Stats\StatsObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\DefinitionsFetchedCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\DisplayMasterSelectCompoentCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\DLCLevelChangedCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\DooberUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\DoubleConfirmScrollableButtonView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Ea\Sharkbite\HttpPlugin\Http\Api\ConnectionSettings.cs" />
@@ -127,7 +133,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\EndSpecialEventCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\EnvironmentAudioManagerMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\EnvironmentAudioManagerView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\FPSGraphC.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\MiniJSON\Json.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\AccessToken.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\AccessTokenRefreshResult.cs" />
@@ -159,7 +164,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\EditorImpl\EditorFacebookMockDialog.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\EditorImpl\EditorWrapper.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\EditorImpl\IEditorWrapper.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FB.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FacebookBase.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FacebookDelegate.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FacebookGameObject.cs" />
@@ -167,6 +171,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FacebookSdkVersion.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FacebookSettings.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FacebookUnityPlatform.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\FB.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\GraphResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\GroupCreateResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\GroupJoinResult.cs" />
@@ -186,11 +191,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\IGroupJoinResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\IInternalResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\ILoginResult.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\InitDelegate.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\IPayFacebook.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\IPayResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\IResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\IShareResult.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\InitDelegate.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\LoginResult.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\MethodArguments.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Facebook\Unity\MethodCall.cs" />
@@ -221,6 +226,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\FillOrderButtonView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\FootprintProperties.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\ForceAxisPosition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\FPSGraphC.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GhostComponentFadeHelperObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Google\Developers\JavaInterfaceProxy.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Google\Developers\JavaObjWrapper.cs" />
@@ -235,15 +241,15 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Events\EventVisibility.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Events\IEvent.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\InvitationReceivedDelegate.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardCollection.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardStart.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\LeaderboardTimeSpan.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\MatchDelegate.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
@@ -260,8 +266,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\InitializationStatus.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Quests\IQuest.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Quests\IQuestMilestone.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\BasicApi\Quests\IQuestsClient.cs" />
@@ -302,10 +308,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\MessageListenerHelper.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\MultiplayerInvitation.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\MultiplayerParticipant.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnectionTypes.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnections.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnectionsBuilder.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnectionsStatus.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\NearbyConnectionTypes.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\ParticipantResults.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\Player.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\Cwrapper\PlayerManager.cs" />
@@ -382,8 +388,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NativeTurnBasedMatch.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NearbyConnectionsManager.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\NearbyConnectionsManagerBuilder.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PInvokeUtilities.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\ParticipantResults.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PInvokeUtilities.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PlatformConfiguration.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\GooglePlayGames\Native\PInvoke\PlayerSelectUIResponse.cs" />
@@ -415,13 +421,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\HindsightUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\HockeyAppAndroid.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\HockeyAppIOS.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IapRewards.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\IEncryptionService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\IGenericPopupView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\ILocalPersistanceService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\IResourceService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\IapRewards.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\IngredientsItemUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\InitializeSpecialEventCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\IResourceService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\ItemType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\JsonConverters.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Audio\AudioSettingsModel.cs" />
@@ -459,17 +465,18 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Controller\LogTapEventMetricsCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Controller\SetupNativeAlertManagerCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\CoppaService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DLCLevelChangedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Definitions.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DeselectAllMinionsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DeselectMinionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DeselectPickSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DeselectTaskedMinionsSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DLCLevelChangedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DoubleClickPickSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DownloadManifestSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\DragAndDropPickSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\EnableBuildingIndicatorSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\EnvironmentalMignetteTappedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\IapTelemetryEvent.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ICoppaService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\IIapTelemetryService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\IManifestService.cs" />
@@ -479,15 +486,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ITelemetrySender.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ITelemetryService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\IVideoService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\IapTelemetryEvent.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LairEnvironmentElementClickedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LandExpansionPickSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LogClientMetricsSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LoggingTelemetryService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LogTapEventMetricsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LogTelemetryCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LogTelemetrySignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\LoggingTelemetryService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\MTXPurchaseStage.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\MagnetFingerPickSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ManifestService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\MediaStateChangedSignal.cs" />
@@ -496,6 +501,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\MinionReactInRadiusSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\MinionTaskCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\MtxBookendTelemetryInfo.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\MTXPurchaseStage.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\NetworkConnectionLostCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\NetworkConnectionLostSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\NetworkModel.cs" />
@@ -508,20 +514,20 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\PostDownloadManifestSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ProgressBarSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\RandomService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ReInitializeGameCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ReInitializeGameSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ReconcileDLCSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\RecreateBuildingSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ReInitializeGameCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ReInitializeGameSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\RepairBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\RequestZoomPercentageSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ResumeNetworkOperationCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ResumeNetworkOperationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\RewardedAdTelemetryUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\ScheduleCooldownSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\SelectMinionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\SelectedMinionModel.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Service\Audio\FMODService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\SelectMinionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Service\Audio\FmodGlobalEventMap.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Service\Audio\FMODService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Service\Audio\IFMODService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Service\HealthMetrics\ClientHealthService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Common\Service\HealthMetrics\IClientHealthService.cs" />
@@ -589,25 +595,25 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AchievementID.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AchievementService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AchievementType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddCharacterToPartyStageCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddCharacterToPartyStageSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddFootprintCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddFootprintSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionsPartyFavorSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionToTikiBarCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionToTikiBarSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddNamedCharacterSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddSpecificMinionPartyFavorSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddStuartToStageCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddStuartToStageSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdjacentDirection.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdPlacementActivityStateChangedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdPlacementDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdPlacementDefinitionConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdPlacementDefinitionFastConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdPlacementInstance.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdPlacementName.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddCharacterToPartyStageCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddCharacterToPartyStageSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddFootprintCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddFootprintSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionToTikiBarCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionToTikiBarSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddMinionsPartyFavorSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddNamedCharacterSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddSpecificMinionPartyFavorSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddStuartToStageCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AddStuartToStageSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AdjacentDirection.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AllMinionLoadedCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AllMinionLoadedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Angle.cs" />
@@ -625,8 +631,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AwardLairBonusDropsThenSetHarvestReadyCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AwardLairBonusDropsThenSetHarvestReadySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\AwardLevelSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BRBCelebrationAnimationCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BRBCelebrationAnimationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BeginCharacterIntroLoopCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BeginCharacterIntroLoopSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BeginCharacterLoopAnimationSignal.cs" />
@@ -642,6 +646,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BobCharacterDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BobPointsAtSignSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BobReturnToTownSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BRBCelebrationAnimationCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BRBCelebrationAnimationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BridgeBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BridgeBuildingDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\BridgeDefinition.cs" />
@@ -701,11 +707,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraInstanceFocusCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraInstanceFocusSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraMovementSettings.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraMoveToCustomLairPlotCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraMoveToCustomLairPlotSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraMoveToCustomPositionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraMoveToCustomPositionSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraMovementSettings.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraResetPanVelocitySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraZoomBeachCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CameraZoomBeachSignal.cs" />
@@ -713,8 +719,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelAllNotificationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelBuildingMovementCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelBuildingMovementSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelMarketPlaceSaleSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelMarketplaceSaleCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelMarketPlaceSaleSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelNotificationCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelNotificationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CancelPremiumPurchaseCommand.cs" />
@@ -758,13 +764,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CloneUserSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CloseConfirmationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CloseDownOrderBoardUISignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectionReward.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectMarketplaceSaleCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectMarketplaceSaleSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectRedemptionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectRedemptionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectTSMQuestTaskRewardCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectTSMQuestTaskRewardSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CollectionReward.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CommonLandExpansionDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\CompositeBuilding.cs" />
@@ -851,8 +857,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DCNToken.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DCNTokenCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DCNTokenSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DLCProgressSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DLCService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DebrisBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DebrisBuildingDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DebrisDefinition.cs" />
@@ -865,10 +869,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefaultPlayerSerializer.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Definition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefinitionGroup.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefinitionService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Definitions.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefinitionsChangedCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefinitionsChangedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefinitionService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefinitionsFetchedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DefinitionsHotSwapCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DeliverTaskItemCommand.cs" />
@@ -886,13 +890,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DevicePrefs.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DevicePrefsService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisableCameraBehaviourSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayableDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayConfirmationCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayConfirmationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayInaccessibleMessageCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayInaccessibleMessageSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayKevinLairWayfinderSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMIBBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMasterPlanCooldownAlertCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMasterPlanCooldownAlertSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMasterPlanCooldownRewardDialogCommand.cs" />
@@ -901,6 +905,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMasterPlanIntroDialogSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMasterPlanRewardDialogCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMasterPlanRewardDialogSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMIBBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayMinionSelectedIconSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayNotificationReminderSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayPlayerTrainingSignal.cs" />
@@ -912,7 +917,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayVillainSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayVolcanoLairVillainWayfinderCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayVolcanoLairVillainWayfinderSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DisplayableDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DLCProgressSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DLCService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DoubleClickPickController.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DragAndDropPickController.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\DragOffsetType.cs" />
@@ -958,11 +964,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ErrorResponseContent.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ExchangeRate.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ExitVillainLairSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FBUser.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FTUELevelChangedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FacebookService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FadeBackgroundAudioCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FastInstanceSerializationHelper.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FBUser.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FeatureAccess.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FetchDefinitionsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FillOrderErrorResponse.cs" />
@@ -986,7 +991,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FrolicCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FrolicSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FtueLevel.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GOHDisplayableType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\FTUELevelChangedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GachaAnimationDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GachaConfig.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GachaWeightedDefinition.cs" />
@@ -1016,13 +1021,14 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GetNewQuestSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GetTeamsRequest.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GhostFunctionDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GoToNextQuestStateCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GoToNextQuestStateSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GoToService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GOHDisplayableType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GooglePlayServerAuthCodeReceivedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GooglePlayService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GotoArgument.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GotoCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GoToNextQuestStateCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GoToNextQuestStateSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GoToService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GotoSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GrantMIBRewardsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\GuestOfHonorDefinition.cs" />
@@ -1045,11 +1051,14 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IConfigurationsService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ICurrencyService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IDCNService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IDLCService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IDefinitionService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IDefinitionsHotSwapHandler.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IdentityType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IDevicePrefsService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IDisplayableDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IDLCService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IdleInTownHallSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IdleMinionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IEnvironmentNavigation.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IGameTimeTracker.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IGoToService.cs" />
@@ -1058,12 +1067,38 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IInput.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ILandExpansionConfigService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ILandExpansionService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IMIBService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ImageMaskCombo.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IMarketplaceService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IMasterPlanQuestService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IMasterPlanService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IMIBService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IMinionPartyBuilding.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IncidentalAnimationCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IncidentalAnimationSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IncidentalPartyFavorAnimationCompletedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IngredientsItemDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitBuildingObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitBuildingObjectSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitCharacterObjectCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitCharacterObjectSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeMarketplaceSlotsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeMarketplaceSlotsSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeSpecialEventSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeVillainSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitMinionObjectSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\INotificationService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InputUtils.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Instance.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InsufficientInputsCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InsufficientInputsSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InterpolateSaleTimeCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InterpolateSaleTimeSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryBuildingMovementCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryBuildingMovementSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryFastConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventorySerializationMiniConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InviteFriendsRequest.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IOrderBoardService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IPartyService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IPlayerDurationService.cs" />
@@ -1082,48 +1117,19 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ISpecialEventService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ISynergyService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITelemetryUtil.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITikiBarService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITimeEventService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITimeService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITimedSocialEventService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITriggerService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IUpsellService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IUserSessionService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IZoomCameraModel.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IdentityType.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IdleInTownHallSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IdleMinionSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ImageMaskCombo.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IncidentalAnimationCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IncidentalAnimationSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IncidentalPartyFavorAnimationCompletedSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IngredientsItemDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitBuildingObjectCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitBuildingObjectSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitCharacterObjectCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitCharacterObjectSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitMinionObjectSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeMarketplaceSlotsCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeMarketplaceSlotsSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeSpecialEventSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InitializeVillainSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InputUtils.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Instance.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InsufficientInputsCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InsufficientInputsSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InterpolateSaleTimeCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InterpolateSaleTimeSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryBuildingMovementCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryBuildingMovementSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryConverter.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventoryFastConverter.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InventorySerializationMiniConverter.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\InviteFriendsRequest.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Item.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ItemAccumulator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ItemDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ItemDefinitionConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ItemDefinitionFastConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITikiBarService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITimedSocialEventService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITimeEventService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITimeService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ITriggerService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IUpsellService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IUserSessionService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\IZoomCameraModel.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\KampaiPendingTransaction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\KampaiTouchInputModule.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\KevinCharacter.cs" />
@@ -1161,6 +1167,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadConfigurationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadCurrencyWarningSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadDefinitionsSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadedPlayerDataCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadedPlayerDataSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadEnvironmentCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadEnvironmentSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadMarketplaceOverridesCommand.cs" />
@@ -1179,8 +1187,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadVillainLairAssetsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadVillainLairInstancesSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadWhiteboxPlayerCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadedPlayerDataCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LoadedPlayerDataSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LocalizedText.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LocalizedTextDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Locatable.cs" />
@@ -1192,18 +1198,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LuaKernel.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LuaReturnValueContainer.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\LuaScriptRunner.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuilding.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingObjectMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingObjectView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingResourceIconSelectedCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingResourceIconSelectedSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingSelectedCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingSelectedSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingState.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBRewardType.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MTXItem.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MagnetFingerPickController.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MapAnimationEventCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MapAnimationEventSignal.cs" />
@@ -1265,6 +1259,17 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MasterPlanService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MasterPlanTaskCompleteCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MasterPlanTaskCompleteSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuilding.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingObjectMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingObjectView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingResourceIconSelectedCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingResourceIconSelectedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingSelectedCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingSelectedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBBuildingState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBRewardType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MIBService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\AlligatorSkiing\AlligatorMignetteJumpLandedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\AlligatorSkiing\AlligatorMignetteMinionHitCollectableSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\AlligatorSkiing\AlligatorMignetteMinionHitObstacleSignal.cs" />
@@ -1333,11 +1338,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterSlideMignetteJumpLandedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterSlideMignetteMinionHitCollectableSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterSlideMignetteMinionHitObstacleSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterslideMignetteOnDiveTriggerSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterslideMignetteOnPlayDiveTriggerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterSlideMignettePathCompletedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterSlideMignetteRoot.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterSlideMignetteSetupCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterslideMignetteOnDiveTriggerSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mignette\WaterSlide\WaterslideMignetteOnPlayDiveTriggerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MignetteBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MignetteBuildingDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MignetteCallMinionsCommand.cs" />
@@ -1418,6 +1423,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mtx\ServerValidationError.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mtx\ServerValidationErrorResponse.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Mtx\StartMtxReceiptValidationCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MTXItem.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MtxReceiptConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MuteMusicBusSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\MuteVolumeCommand.cs" />
@@ -1463,6 +1469,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardDeleteOrderSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardFillOrderCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardFillOrderCompleteSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderboardFillOrderRewardDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardFillOrderSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardQuestStepController.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardRefillTicketSignal.cs" />
@@ -1474,7 +1481,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardTicketState.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardTransactionFailedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderBoardUpdateTicketOnBoardSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\OrderboardFillOrderRewardDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PackDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PanAndOpenModalCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PanAndOpenModalSignal.cs" />
@@ -1515,13 +1521,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlaceBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlatformDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlatformStoreSkuDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayGlobalMusicCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayGlobalSoundFXCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayGlobalSoundFXOneShotCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayLocalAudioCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayLocalAudioOneShotCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayMignetteMusicCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayMinionNoAnimAudioSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Player.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayerData.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayerDataLoaded.cs" />
@@ -1552,6 +1551,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayerTrainingTransactionOutputExaminationCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayerTrainingTransactionOutputExaminationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayerVersion.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayGlobalMusicCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayGlobalSoundFXCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayGlobalSoundFXOneShotCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayLocalAudioCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayLocalAudioOneShotCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayMignetteMusicCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlayMinionNoAnimAudioSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Plot.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlotDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlotDefinitionConverter.cs" />
@@ -1559,21 +1565,21 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PlotType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PointBobLandExpansionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PointBobLandExpansionSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PopUnleashedCharacterToTikiBarSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PopulateBuildingCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PopulateBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PopulateEnvironmentCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PopulateEnvironmentSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PopulationBenefitDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PopUnleashedCharacterToTikiBarSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PostMinionPartyEndSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PostMinionPartyStartSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PostMinionUpgradeSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PostStartPartyBuffTimerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PostTransactionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PostTransactionSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PrefabLightmapView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PreLoadPartyAssetsCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PreLoadPartyAssetsSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PrefabLightmapView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PremiumCurrencyItemDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PrepareLeisureMinionsForPartySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PrepareTaskingMinionsForPartySignal.cs" />
@@ -1586,13 +1592,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ProcessSpecialSaleItemCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ProcessSpecialSaleItemSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchaseAwarePlayerService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchasedLandExpansion.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchasedLandExpansionDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchaseLandExpansionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchaseLandExpansionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchaseMarketplaceSlotCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchaseMarketplaceSlotSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchaseNewBuildingSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchasedLandExpansion.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PurchasedLandExpansionDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\PushNotificationService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\QuantityInstance.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Quest.cs" />
@@ -1650,8 +1656,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RandomFlyOverSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RandomizeMinionPositionsCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RandomizeMinionPositionsSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReLinkAccountCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReLinkAccountSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RecipeDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReconcileLevelUnlocksCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReconcileLevelUnlocksSignal.cs" />
@@ -1664,6 +1668,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RegisterUserCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RegisterUserSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReleaseMinionFromTikiBarSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReLinkAccountCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReLinkAccountSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReloadConfigurationsPeriodicSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RelocateCharacterCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RelocateCharacterSignal.cs" />
@@ -1683,10 +1689,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RemoveMinionFromTikiBarCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RemoveMinionFromTikiBarSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RemoveQuestWorldIconSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RepairBridgeSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RepairLairResourcePlotSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RepairableBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RepairableBuildingDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RepairBridgeSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RepairLairResourcePlotSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReportMarketplaceTransactionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ReportMarketplaceTransactionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RequestStopMignetteSignal.cs" />
@@ -1728,13 +1734,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Reward.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardCollection.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardCollectionDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardTiers.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardTriggerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardedAdRewardSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardedAdService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardedAdType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardedAdUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardedAdvertisementDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardTiers.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RewardTriggerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RotateBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RouteMinionToLairResourcePlotSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\RouteMinionToLeisureSignal.cs" />
@@ -1764,12 +1770,12 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ScheduleNotificationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ScreenPosition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectBuildingSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectionCompleteCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectionCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectLandExpansionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectLandExpansionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectMinionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectMinionState.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectionCompleteCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SelectionCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SellToAICommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SellToAISignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SendBuildingToInventorySignal.cs" />
@@ -1785,7 +1791,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetNamedCharacterCollidersCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetNamedCharacterCollidersSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetPartyStatesSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetVillainLairAnimationTriggerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupAspirationalBuildingsCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupAspirationalBuildingsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupAudioCommand.cs" />
@@ -1813,10 +1818,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupPushNotificationsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupSpecialEventCharacterCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupSpecialEventCharacterSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupTSMCharacterCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupTSMCharacterSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupTimeEventServiceCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupTimeEventServiceSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupTSMCharacterCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetupTSMCharacterSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SetVillainLairAnimationTriggerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ShowAndIncreaseMignetteScoreCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ShowAndIncreaseMignetteScoreSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ShowBuildingFootprintSignal.cs" />
@@ -1881,10 +1887,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StageBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StageBuildingDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StageService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartCOPPAFlowCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartCOPPAFlowSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartConstructionCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartConstructionSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartCOPPAFlowCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartCOPPAFlowSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartCurrencyBuffSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartGameTimeTrackingCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartGameTimeTrackingSignal.cs" />
@@ -1924,15 +1930,15 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartSaleCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartSaleSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartSpecialEventSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartTSMQuestTaskCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartTaskSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartTeleportTaskSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartTimedQuestCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartTimedQuestSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StartTSMQuestTaskCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StaticItem.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Sticker.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StickerDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StickerbookCharacterDisplayableType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StickerDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StopCurrencyBuffSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StopGagAnimationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\StopLocalAudioCommand.cs" />
@@ -1965,29 +1971,22 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SwitchCameraCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SwitchCameraSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\SynergyService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacter.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacterDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacterSelectedCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacterSelectedSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMReachedDestinationSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMStartIntroAnimation.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMTreasureCollectedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TapMinionSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskHarvestSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskLevelBandDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskTransactionArgument.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskableBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskableBuildingDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskableMinionPartyBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskableMinionPartyBuildingDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskHarvestSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskLevelBandDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaskTransactionArgument.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TaxonomyDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TelemetryUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TeleportCharacterToTikiBarSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TeleportMinionsToTownForPartySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TeleportMinionToBuildingCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TeleportMinionToBuildingSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TeleportMinionToLeisureSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TeleportMinionsToTownForPartySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TemporaryMinionsService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ThrowPartyQuestStepController.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TikiBarBuilding.cs" />
@@ -1996,16 +1995,16 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TikiBarService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TikiBarSetAnimParamSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TikiBarViewPickController.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeEvent.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeEventService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeEventType.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimedQuestDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimedQuestNotificationCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimedQuestNotificationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimedQuestStartSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimedSocialEventDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimedSocialEventService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeEvent.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeEventService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeEventType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TimeService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ToggleHitboxSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ToggleMinionRendererCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ToggleMinionRendererSignal.cs" />
@@ -2067,9 +2066,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\SocialOrderTriggerRewardDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\SocialTimeTriggerConditionDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\StorageTriggerConditionDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TSMMessageTriggerRewardDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TSMTriggerDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TSMTriggerInstance.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TriggerConditionDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TriggerConditionDefinitionConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TriggerConditionDefinitionFastConverter.cs" />
@@ -2087,6 +2083,9 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TriggerRewardDefinitionFastConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TriggerRewardLayout.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TriggerRewardType.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TSMMessageTriggerRewardDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TSMTriggerDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\TSMTriggerInstance.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\UpsellTriggerDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\UpsellTriggerInstance.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\Trigger\UpsellTriggerRewardDefinition.cs" />
@@ -2095,6 +2094,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TriggerPhilPartyStartSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TriggerService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TriggerVFXOnState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacterDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacterSelectedCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMCharacterSelectedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMReachedDestinationSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMStartIntroAnimation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\TSMTreasureCollectedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UIAnimationDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnleashCharacterAnimationCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnleashCharacterAtShoreCommand.cs" />
@@ -2107,10 +2113,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnloadPartyAssetsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnlockCharacterModel.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnlockDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnlockedItem.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnlockMinionsCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnlockMinionsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnlockVillainLairSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnlockedItem.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnveilCharacterCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnveilCharacterObjectSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UnveilCharacterSignal.cs" />
@@ -2136,9 +2142,9 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdatePurchasedSalesSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateQuestWorldIconsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateSaleBadgeSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateTaskedMinionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateTSMQuestTaskCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateTSMQuestTaskSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateTaskedMinionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateUserSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateVillainPrestigeCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UpdateVillainPrestigeSignal.cs" />
@@ -2150,24 +2156,24 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserAgeForCOPPAReceivedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserIdentity.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserLoginRequest.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserRegisterRequest.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserRegisteredSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserRegisterRequest.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserSale.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserSegment.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserSession.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserSessionGrantedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserSessionService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\UserUpdateRequest.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\VFXAssetDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ValidateCurrentTriggerSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\VFXAssetDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\Actionable.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\ActionableObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\ActionableObjectManagerView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\ActorObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\AndroidBackButtonCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\AnimEventHandler.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\Animatable.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\AnimatingBuildingObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\AnimEventHandler.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\AppearAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\Audible.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\Audio\PositionalAudioListenerMediator.cs" />
@@ -2222,11 +2228,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\DummyCharacterObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnableRendererAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnterVillainLairCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnvironmentAudioEmitterMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnvironmentAudioEmitterView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnvironmentalMignetteMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnvironmentalMignetteObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnvironmentalMignetteView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnvironmentAudioEmitterMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\EnvironmentAudioEmitterView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\ExitVillainLairCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\FadeAudioAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\FootprintMediator.cs" />
@@ -2237,12 +2243,12 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\GaggableBuildingObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\GotoSideWalkAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\HarvestReadyCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\IRequiresBuildingScaffolding.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\IScaffoldingPart.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\IStartAudio.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\IncidentalFinishedAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\InnerTubeObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\Instantiator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\IRequiresBuildingScaffolding.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\IScaffoldingPart.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\IStartAudio.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\KampaiAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\KevinMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\KevinView.cs" />
@@ -2349,9 +2355,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\StuartView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\SyncAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\SyncDelegateAction.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TSMCharacterHideState.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TSMCharacterMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TSMCharacterView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TaskableBuildingObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TaskingCharacterObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TaskingMinionObject.cs" />
@@ -2369,6 +2372,9 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TriggerBuildingAnimationAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TryCollectLeisurePointsCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TryHarvestBuildingCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TSMCharacterHideState.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TSMCharacterMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\TSMCharacterView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\UnlockVillainLairCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\UntrackVFXAction.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\View\UpdateQuestWorldIconsCommand.cs" />
@@ -2408,10 +2414,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\WayFinderDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\WelcomeHutBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\WelcomeHutBuildingDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ZoomCameraModel.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ZoomType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ZoomableBuilding.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ZoomableBuildingDefinition.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ZoomCameraModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Game\ZoomType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\AppStartCompleteCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\AppStartCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\AssetsPreloadList.cs" />
@@ -2436,14 +2442,15 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\IAssetsPreloadService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\IHindsightService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\ILocalContentService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\ILocalString.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\ILocalizationService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\ISupersonicService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\ILocalString.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\InitLocalizationServiceCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\InitLocalizationServiceSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\ISupersonicService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\KampaiFatalTarget.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\KampaiLogglyTarget.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\KampaiNativeTarget.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LanguageChangedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LoadAudioSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LoadDevicePrefsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LoadLocalizationServiceCommand.cs" />
@@ -2451,12 +2458,12 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LoadState.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LoadStateType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalContentService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalizationServiceInitializedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalizationServices.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalQuantityString.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalResourcesManifest.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalString.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalStringConverter.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalizationServiceInitializedSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\LocalizationServices.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\MainCompleteCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\MainCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Main\MainContext.cs" />
@@ -2533,13 +2540,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\ILoadInService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LaunchDownloadCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LaunchDownloadSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadingBarMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadingBarView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadInService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadinTipBucketDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadInTipDefinition.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadInTipMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadInTipView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadinTipBucketDefinition.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadingBarMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LoadingBarView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LogoPanelMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\LogoPanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Splash\SavedTipsModel.cs" />
@@ -2566,9 +2573,9 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\AnimationToolKitElement.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\AnimationToolKitMinionManagerView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\AnimationToolKitMode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\AnimationToolkitModel.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\AnimationToolKitPlayerService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\AnimationToolKitRoot.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\AnimationToolkitModel.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\CharacterCreatedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\EnableInterfaceSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Tools\AnimationToolKit\GachaButtonPanelMediator.cs" />
@@ -2613,9 +2620,9 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\AddFPSCounterCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\AnimatorPopupController.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\AspectRatioLayoutElement.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\BuildingPopupPositionData.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\BuildMenuLocalState.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\BuildMenuService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\BuildingPopupPositionData.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\Controller\DisplayMasterPlanOnboardingCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\Controller\DisplayMasterPlanSelectComponentSimpleCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\Controller\ShowClientUpgradeDialogCommand.cs" />
@@ -2694,19 +2701,17 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuffInfoPopupClosedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuffInfoPopupMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuffInfoPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuildingIdentificationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuildMenuButtonClickedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuildMenuDefinitionLoadedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuildMenuMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuildMenuOpenedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuildMenuView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuildingIdentificationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ButtonView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuyMarketplacePanelMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuyMarketplacePanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuyMarketplaceSlotMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\BuyMarketplaceSlotView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\COPPAAgeGatePanelMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\COPPAAgeGatePanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CabanaChildWayFinderMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CabanaChildWayFinderView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CabanaParentWayFinderMediator.cs" />
@@ -2728,6 +2733,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CollectionRewardIndicator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CompositeBuildingMenuMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CompositeBuildingMenuView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\COPPAAgeGatePanelMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\COPPAAgeGatePanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CraftingCompleteCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CraftingCompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\CraftingHintStopSignal.cs" />
@@ -2793,11 +2800,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayCameraControlsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayCurrencyStoreCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayCurrencyStoreSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayDLCDialogCommand.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayDLCDialogSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayDebugButtonSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayDisco3DElements.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayDiscoGlobeSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayDLCDialogCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayDLCDialogSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayFloatingTextSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayItemPopupCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\DisplayItemPopupSignal.cs" />
@@ -2834,23 +2841,14 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\EnableStorageBuildingItemDescriptionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\EnableVillainLairHudSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ExtendItemPopupSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FAQPanelMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FAQPanelView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUECloseBuddySignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUELevelUpCloseSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUELevelUpOpenSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEProgressSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEQuestFinished.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEQuestGoToSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEQuestPanelCloseSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUERewardClosed.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUETikiOpened.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FaceCameraView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FacebookConnectPopupMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FacebookConnectPopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FaceCameraView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FadeBlackMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FadeBlackSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FadeBlackView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FAQPanelMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FAQPanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FinishCreateFunMeterSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FinishPurchasingSalePackCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FinishPurchasingSalePackSignal.cs" />
@@ -2863,15 +2861,15 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FloatingTextPanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FloatingTextSettings.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FloatingTextView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GOHCardClickedSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GOH_InfoPanelMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GOH_InfoPanelView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIArguments.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIAutoAction.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIOperation.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIPriority.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIServiceQueueEmptySignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUECloseBuddySignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUELevelUpCloseSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUELevelUpOpenSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEProgressSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEQuestFinished.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEQuestGoToSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUEQuestPanelCloseSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUERewardClosed.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\FTUETikiOpened.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GameObjectViewExtension.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GenericPopupMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GenericPopupView.cs" />
@@ -2879,14 +2877,18 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GenericRushDialogMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GenericRushDialogView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GetWayFinderSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GOH_InfoPanelMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GOH_InfoPanelView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GOHCardClickedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GoToResourceButtonClickedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GuestOfHonorSelectionMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GuestOfHonorSelectionView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDChangedSiblingIndexSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDSettingsMenuPanelMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDSettingsMenuPanelView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIArguments.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIAutoAction.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIOperation.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIPriority.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIService.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\GUIServiceQueueEmptySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HelpPanelMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HelpPanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HelpTipButtonView.cs" />
@@ -2910,18 +2912,23 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HighlightType.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HindsightContentMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HindsightContentView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDChangedSiblingIndexSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDSettingsMenuPanelMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDSettingsMenuPanelView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\HUDView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IChildWayFinderView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IDoubleConfirmHandler.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IGUICommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IGUIService.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IParentWayFinderView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IQuestWayFinderView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IWayFinderView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IWorldToGlassView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IncreaseInventoryCountForBuildMenuSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IndexSelectionSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IParentWayFinderView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IQuestWayFinderView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ItemListMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ItemListView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IWayFinderView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\IWorldToGlassView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\KampaiButton.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\KampaiClickableImage.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\KampaiFanFareRaycaster.cs" />
@@ -2954,8 +2961,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\LoadUICompleteSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\LocalizeView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\LogToScreenSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MIBRewardMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MIBRewardView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MaintainScaleView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MarketplaceCloseAllSalePanels.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MarketplaceCloseBuyPanelSignal.cs" />
@@ -2983,6 +2988,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MessagePopUpAnchor.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MessagePopupMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MessagePopupView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MIBRewardMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MIBRewardView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MignetteCallMinionsMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MignetteCallMinionsView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MignetteDooberSpawnedSignal.cs" />
@@ -3017,13 +3024,13 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MockStoreMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MockStoreView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ModalSettings.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildMenuSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildingMenuMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildingMenuView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildingModal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildingSetting.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildingWayFinderMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildingWayFinderView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveBuildMenuSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveHUDSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveSkrimTopLayerSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\MoveTabMenuSignal.cs" />
@@ -3151,8 +3158,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveCraftingQueueSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveFloatingTextSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveQuestFromExistingWayFinderSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveResourceIconSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveResourceIconsByTrackedIdSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveResourceIconSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveSalePackSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveStorageBuildingItemDescriptionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RemoveUnlockForBuildMenuSignal.cs" />
@@ -3173,9 +3180,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ResourcePlotUnlockRushDialogMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ResourcePlotUnlockRushDialogView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RevealLevelUpUISignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardReminderHUDMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardReminderHUDView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardSliderView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardedAdHUDPanelMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardedAdHUDPanelView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardedAdPickRewardModalMediator.cs" />
@@ -3183,14 +3187,17 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardedAdRewardView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardedVideoHUDMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardedVideoHUDView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardReminderHUDMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardReminderHUDView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RewardSliderView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RushButtonView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RushDialogConfirmationSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RushDialogMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RushDialogView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\RushRevealBuildingSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SalepackHUDMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SalePackHUDPanelMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SalePackHUDPanelView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SalepackHUDMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SalepackHUDView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SelectStorageBuildingItemSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SellPanelMediator.cs" />
@@ -3198,8 +3205,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SellQuantityButtonMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SellQuantityButtonView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetBadgeForStoreTabSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetBuildMenuEnabledSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetBuildingRushedSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetBuildMenuEnabledSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetFTUETextSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetGrindCurrencySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetHUDButtonsVisibleSignal.cs" />
@@ -3213,7 +3220,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetPremiumCurrencySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetStorageCapacitySignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetStorageMenuEnabledSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetXPSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SettingsLearnSystemsCategoryItemMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SettingsLearnSystemsCategoryItemPanelMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SettingsLearnSystemsCategoryItemPanelView.cs" />
@@ -3232,6 +3238,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetupCanvasCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetupCanvasSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetupMockStoreDialogSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\SetXPSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShouldRateAppSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShouldShowPredicateDelegate.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowActivitySpinnerCommand.cs" />
@@ -3253,11 +3260,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowForcedClientUpgradeScreenSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowHUDReminderSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowHUDSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowMTXStoreSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowMinionPartySkipButtonSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowMockStoreDialogCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowMockStoreDialogSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowMoveBuildingMenuSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowMTXStoreSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowNeedXMinionsCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowNeedXMinionsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\ShowOfflinePopupSignal.cs" />
@@ -3356,18 +3363,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\StoreTab.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\StoreTabBuilder.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\StoreTabView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMGiftModalMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMGiftModalView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMHelpModalArguments.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMHelpModalMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMHelpModalView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMItemPanelMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMItemPanelView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMQuantityItemView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMTriggerWayFinderMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMTriggerWayFinderView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMWayFinderMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMWayFinderView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TabMenuMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TabMenuView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TempHideSettingsMenuSignal.cs" />
@@ -3391,6 +3386,18 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TownHallDialogView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TrainingClosedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TryCollectLeisurePointsSignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMGiftModalMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMGiftModalView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMHelpModalArguments.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMHelpModalMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMHelpModalView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMItemPanelMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMItemPanelView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMQuantityItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMTriggerWayFinderMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMTriggerWayFinderView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMWayFinderMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\TSMWayFinderView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UIAddedCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UIAddedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UIAnchorPositionSlideAnim.cs" />
@@ -3407,14 +3414,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UIStackMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UIStartCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UITryHarvestSignal.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellItemMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellItemView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellMessagingModalMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellMessagingModalView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellModalMediator.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellModalMediatorBase.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellModalView.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpsellPriceMarkdownView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpdateBuySlotSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpdateFacebookStateSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpdateIdleMinionCountSignal.cs" />
@@ -3436,6 +3435,14 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpdateUIButtonsSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpdateVillainLairMenuViewSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpdateWayFinderPrioritySignal.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellItemMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellItemView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellMessagingModalMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellMessagingModalView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellModalMediator.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellModalMediatorBase.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpSellModalView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpSell\UpsellPriceMarkdownView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UpsellButtonView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UsageSharingAcceptedSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\UI\View\UsageSharingMediator.cs" />
@@ -3474,9 +3481,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AABox2D.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ABTestCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ABTestModel.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ActionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\Agent.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerCharacterToFollowPath.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerCharacterToSeek.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteeringBehaviour.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerMinionToWander.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerToAvoidCollisions.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerToAvoidEnvironment.cs" />
@@ -3484,8 +3493,6 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerToSeek.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerToTether.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteerToWander.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AI\SteeringBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ActionSignal.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AndroidDeviceInspector.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AnimatorStateInfo\AnimatorStateMediator.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\AnimatorStateInfo\AnimatorStateView.cs" />
@@ -3531,18 +3538,17 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\EditorDeviceInspector.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ExpandableData.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Extensions.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FPSUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FadeMaterialBlock.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastCommandBinder.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastCommandPool.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastDeserializerIgnoreAttribute.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastDoubleToString.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastIntToString.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastJsonConverter.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastJsonCreationConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastJSONDeserializer.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastJSONSerializer.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastJSONWriter.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastJsonConverter.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastJsonCreationConverter.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastPooledCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastPooledCommandBase.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FastPooledCommandBinder.cs" />
@@ -3552,6 +3558,7 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FatalException.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FatalView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FeatureAccessUtil.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\FPSUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\GameConstants.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\GameObjectUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\GarbageCollector.cs" />
@@ -3573,6 +3580,8 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IBuilder.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IClientVersion.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ICoroutineProgressMonitor.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Identifiable.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IdentifiableUtils.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IDeviceInspector.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IDummyCharacterBuilder.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IFastCommand.cs" />
@@ -3584,37 +3593,35 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IKampaiLogger.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IMinionBuilder.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\INamedCharacterBuilder.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Invoker.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\InvokerService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IOSDeviceInspector.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IPartyFavorAnimationService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IPathFinder.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IRoutineRunner.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ITuple.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IUTCRangeable.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IUpdateRunner.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Identifiable.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IdentifiableUtils.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Invoker.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\InvokerService.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ItemUtil.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ITuple.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IUpdateRunner.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\IUTCRangeable.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\JavaRandom.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KDNode.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KDTree.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KDTreeNodesPool.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiColor.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiDisposable.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiLogLevel.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiLogger.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiLoggerV2.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiLogLevel.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiQueue.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiResources.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiStringReader.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KampaiView.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KDNode.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KDTree.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KDTreeNodesPool.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\KillParticleScript.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\LODAsset.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\LegalDocuments.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\LineRenderGroup.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ListUtil.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\LocalizedImageBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\LODAsset.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Logging\Hosted\CachedValue.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Logging\Hosted\ILogglyDtoCache.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Logging\Hosted\Log.cs" />
@@ -3676,10 +3683,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\UpdateRunner.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\UpdateRunnerBehaviour.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\UtilElement.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\VFXScript.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\ValueData.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\Vector3Serialize.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\VectorExtension.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Kampai\Util\VFXScript.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\KampaiNonDrawingGraphic.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\LayerUtils.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\LoadConfigurationsCommand.cs" />
@@ -3755,10 +3762,10 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\IAP\Base64EncodedReceipt.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\IAP\IapReceipt.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\IAP\RawReceipt.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ISwrvePushNotificationListener.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ISwrveStorage.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Input\IInputManager.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Input\NativeInputManager.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ISwrvePushNotificationListener.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ISwrveStorage.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Messaging\ISwrveCustomButtonListener.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Messaging\ISwrveInstallButtonListener.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Messaging\ISwrveMessageAnimator.cs" />
@@ -3777,11 +3784,11 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Messaging\SwrveOrientationHelper.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Messaging\SwrveQAUser.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Messaging\SwrveWidget.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ResourceManager\SwrveResource.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ResourceManager\SwrveResourceManager.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\REST\IRESTClient.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\REST\RESTClient.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\REST\RESTResponse.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ResourceManager\SwrveResource.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\ResourceManager\SwrveResourceManager.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Storage\SwrveFileStorage.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\Storage\SwrvePlayerPrefsStorage.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\Swrve\SwrveConfig.cs" />
@@ -3800,22 +3807,22 @@
      <Compile Include="Assets\Scripts\Assembly-CSharp\TransformLite.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\TransformUtils.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\UIUtils.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\UVScroll.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\UnityEngine\UnityUtils.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\UnlockableScrollableButtonView.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\UpdatePurchasedSalesCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\UpdateUserCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\UpdateVolumeCommand.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\UserRegisteredCommand.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\UVScroll.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\VectorUtils.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterSlideBuildingViewObject.cs" />
-     <Compile Include="Assets\Scripts\Assembly-CSharp\WaterSlideTargetZoneAnimTrigger.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideCameraController.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideCameraTrigger.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideDiveAnimationTrigger.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideDiveTrigger.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideSpawnObject.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideSpinnerViewObject.cs" />
+     <Compile Include="Assets\Scripts\Assembly-CSharp\WaterSlideTargetZoneAnimTrigger.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideVFXManager.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideVFXParticleRotation.cs" />
      <Compile Include="Assets\Scripts\Assembly-CSharp\WaterslideVFXTimedDestroy.cs" />
@@ -3832,10 +3839,10 @@
      <Compile Include="Assets\Scripts\GoKit\AbstractQuaternionTweenProperty.cs" />
      <Compile Include="Assets\Scripts\GoKit\AbstractTweenProperty.cs" />
      <Compile Include="Assets\Scripts\GoKit\AbstractVector3TweenProperty.cs" />
-     <Compile Include="Assets\Scripts\GoKit\AnchorMaxTweenProperty.cs" />
-     <Compile Include="Assets\Scripts\GoKit\AnchorMinTweenProperty.cs" />
      <Compile Include="Assets\Scripts\GoKit\AnchoredPosition3DTweenProperty.cs" />
      <Compile Include="Assets\Scripts\GoKit\AnchoredPositionTweenProperty.cs" />
+     <Compile Include="Assets\Scripts\GoKit\AnchorMaxTweenProperty.cs" />
+     <Compile Include="Assets\Scripts\GoKit\AnchorMinTweenProperty.cs" />
      <Compile Include="Assets\Scripts\GoKit\ColorTweenProperty.cs" />
      <Compile Include="Assets\Scripts\GoKit\EulerAnglesTweenProperty.cs" />
      <Compile Include="Assets\Scripts\GoKit\FloatTweenProperty.cs" />
@@ -3954,12 +3961,12 @@
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Tar\TarInputStream.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Tar\TarOutputStream.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\BaseArchiveStorage.cs" />
-     <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\DeflateStrategy.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\Deflater.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\DeflaterConstants.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\DeflaterEngine.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\DeflaterHuffman.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\DeflaterPending.cs" />
+     <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\DeflateStrategy.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\Inflater.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\InflaterDynHeader.cs" />
      <Compile Include="Assets\Scripts\ICSharpCode.SharpZipLib\ICSharpCode\SharpZipLib\Zip\Compression\InflaterHuffmanTree.cs" />
@@ -4208,8 +4215,8 @@
      <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\context\impl\MVCSContext.cs" />
      <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\api\DispatcherExceptionType.cs" />
      <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\api\IDispatcher.cs" />
-     <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\api\ITriggerProvider.cs" />
      <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\api\ITriggerable.cs" />
+     <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\api\ITriggerProvider.cs" />
      <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\eventdispatcher\api\EmptyCallback.cs" />
      <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\eventdispatcher\api\EventCallback.cs" />
      <Compile Include="Assets\Scripts\StrangeIoC\strange\extensions\dispatcher\eventdispatcher\api\EventCallbackType.cs" />
@@ -4308,7 +4315,6 @@
      <None Include="Assets\Resources\content\dlc\quest_scripts\quest_31068_pre.txt" />
      <None Include="Assets\Resources\content\dlc\quest_scripts\quest_3849294_step_1_post.txt" />
      <None Include="Assets\Shader\camera_vignette.shader" />
-     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Resources\content\dlc\quest_scripts\quest_333112_pre.txt" />
      <None Include="Assets\Resources\content\dlc\quest_scripts\quest_31048_pre.txt" />
      <None Include="Assets\Resources\content\dlc\quest_scripts\quest_101131_pre.txt" />
@@ -4401,10 +4407,43 @@
      <None Include="Assets\Resources\content\dlc\quest_scripts\quest_31074_pre.txt" />
      <None Include="Assets\Shader\Unlit_plusOffset10.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/5.3.5p4/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/5.3.5p4/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.0f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

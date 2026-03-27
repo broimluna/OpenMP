@@ -79,7 +79,7 @@ namespace Discord.Unity
 		{
 			get
 			{
-				return CurrentPlatform == global::Discord.Unity.FacebookUnityPlatform.WebGL || CurrentPlatform == global::Discord.Unity.FacebookUnityPlatform.WebPlayer;
+				return CurrentPlatform == global::Discord.Unity.FacebookUnityPlatform.WebGL;
 			}
 		}
 
@@ -131,9 +131,6 @@ namespace Discord.Unity
 				return global::Discord.Unity.FacebookUnityPlatform.Android;
 			case global::UnityEngine.RuntimePlatform.IPhonePlayer:
 				return global::Discord.Unity.FacebookUnityPlatform.IOS;
-			case global::UnityEngine.RuntimePlatform.OSXWebPlayer:
-			case global::UnityEngine.RuntimePlatform.WindowsWebPlayer:
-				return global::Discord.Unity.FacebookUnityPlatform.WebPlayer;
 			case global::UnityEngine.RuntimePlatform.WebGLPlayer:
 				return global::Discord.Unity.FacebookUnityPlatform.WebGL;
 			default:

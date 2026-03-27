@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class SwrveSDK
 {
 	protected class CoroutineReference<T>

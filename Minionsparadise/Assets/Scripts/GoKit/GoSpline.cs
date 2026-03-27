@@ -62,11 +62,6 @@ public class GoSpline
 
 	private static global::System.Collections.Generic.List<global::UnityEngine.Vector3> nodeListFromAsset(string pathAssetName)
 	{
-		if (global::UnityEngine.Application.platform == global::UnityEngine.RuntimePlatform.OSXWebPlayer || global::UnityEngine.Application.platform == global::UnityEngine.RuntimePlatform.WindowsWebPlayer)
-		{
-			global::UnityEngine.Debug.LogError("The Web Player does not support loading files from disk.");
-			return null;
-		}
 		string empty = string.Empty;
 		if (!pathAssetName.EndsWith(".asset"))
 		{

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Kampai.UI.View
 {
 	public class HindsightContentView : global::strange.extensions.mediation.impl.View

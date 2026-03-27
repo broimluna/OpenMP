@@ -197,6 +197,17 @@ namespace GooglePlayGames
 			Authenticate(callback, false);
 		}
 
+		public void Authenticate(global::UnityEngine.SocialPlatforms.ILocalUser user, global::System.Action<bool, string> callback)
+		{
+			Authenticate((bool success) =>
+			{
+				if (callback != null)
+				{
+					callback(success, string.Empty);
+				}
+			});
+		}
+
 		public bool IsAuthenticated()
 		{
 			return mClient != null && mClient.IsAuthenticated();

@@ -3,55 +3,62 @@
 --- !u!30 &1
 GraphicsSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 5
+  serializedVersion: 12
   m_Deferred:
     m_Mode: 1
     m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}
   m_DeferredReflections:
     m_Mode: 1
     m_Shader: {fileID: 74, guid: 0000000000000000f000000000000000, type: 0}
+  m_ScreenSpaceShadows:
+    m_Mode: 1
+    m_Shader: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}
   m_LegacyDeferred:
     m_Mode: 1
     m_Shader: {fileID: 63, guid: 0000000000000000f000000000000000, type: 0}
+  m_DepthNormals:
+    m_Mode: 1
+    m_Shader: {fileID: 62, guid: 0000000000000000f000000000000000, type: 0}
+  m_MotionVectors:
+    m_Mode: 1
+    m_Shader: {fileID: 75, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightHalo:
+    m_Mode: 1
+    m_Shader: {fileID: 105, guid: 0000000000000000f000000000000000, type: 0}
+  m_LensFlare:
+    m_Mode: 1
+    m_Shader: {fileID: 102, guid: 0000000000000000f000000000000000, type: 0}
   m_AlwaysIncludedShaders:
-  - {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 4800000, guid: 29f2724badce01944895f5a3581e7b43, type: 3}
-  - {fileID: 4800000, guid: 2c76c1d2a4fb8ba48853b79f825e7424, type: 3}
-  - {fileID: 4800000, guid: 3d628e245e796c6419a61f0efcd870df, type: 3}
+  - {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15104, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15105, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15106, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 10782, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 4800000, guid: 77bbd4315f083e34087c64850bfe9556, type: 3}
-  - {fileID: 4800000, guid: ce3ddcc8c91532d4bb047868fdec41b3, type: 3}
-  - {fileID: 4800000, guid: 4601eead442db7a4a94783a0c44a31e9, type: 3}
-  - {fileID: 4800000, guid: 44105bd73e5d5174496f18a96db5905f, type: 3}
-  - {fileID: 4800000, guid: 10f0c7c6999a5d046a0a414ad4344390, type: 3}
-  - {fileID: 4800000, guid: 0c3a15ebd80af3943bf732bdc0d3663d, type: 3}
-  - {fileID: 4800000, guid: 0fa17d7674eb39046a56709fda7ea2ea, type: 3}
-  - {fileID: 207, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 4800000, guid: 4dbfedd289b5f2f42a187bbfcca0a3a0, type: 3}
-  - {fileID: 4800000, guid: 5bcdd9a528b660045ac872fb469dfc39, type: 3}
-  - {fileID: 4800000, guid: 6e6ccdc8d3e3a5045a5319e5f0bf5da6, type: 3}
-  - {fileID: 4800000, guid: 713395a49b30ec148a3d8d42efbf2138, type: 3}
-  - {fileID: 4800000, guid: e94fa287b9621ec489874d84edc6d862, type: 3}
-  - {fileID: 4800000, guid: f9a87433de0c06747ba4b48d2d782ad9, type: 3}
-  - {fileID: 4800000, guid: 7929b6175356a59469154211b373aa58, type: 3}
-  - {fileID: 4800000, guid: 1df62a056ea82894baf3b534a941a6a7, type: 3}
+  - {fileID: 17000, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 16000, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 16002, guid: 0000000000000000f000000000000000, type: 0}
   m_PreloadedShaders: []
-  m_ShaderSettings:
-    useScreenSpaceShadows: 1
-  m_BuildTargetShaderSettings:
-  - m_BuildTarget: Android
-    m_ShaderSettings:
-      useScreenSpaceShadows: 0
-    m_Automatic: 0
+  m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000,
+    type: 0}
+  m_CustomRenderPipeline: {fileID: 0}
+  m_TransparencySortMode: 0
+  m_TransparencySortAxis: {x: 0, y: 0, z: 1}
+  m_DefaultRenderingPath: 1
+  m_DefaultMobileRenderingPath: 1
+  m_TierSettings: []
   m_LightmapStripping: 0
   m_FogStripping: 0
+  m_InstancingStripping: 0
   m_LightmapKeepPlain: 1
   m_LightmapKeepDirCombined: 1
-  m_LightmapKeepDirSeparate: 1
   m_LightmapKeepDynamicPlain: 1
   m_LightmapKeepDynamicDirCombined: 1
-  m_LightmapKeepDynamicDirSeparate: 1
+  m_LightmapKeepShadowMask: 1
+  m_LightmapKeepSubtractive: 1
   m_FogKeepLinear: 1
   m_FogKeepExp: 1
   m_FogKeepExp2: 1
+  m_AlbedoSwatchInfos: []
+  m_LightsUseLinearIntensity: 0
+  m_LightsUseColorTemperature: 0

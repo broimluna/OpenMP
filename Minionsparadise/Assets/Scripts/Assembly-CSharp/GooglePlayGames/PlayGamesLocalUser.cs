@@ -139,6 +139,11 @@ namespace GooglePlayGames
 			mPlatform.Authenticate(callback, silent);
 		}
 
+		public void Authenticate(global::System.Action<bool, string> callback)
+		{
+			mPlatform.Authenticate(this, callback);
+		}
+
 		public void LoadFriends(global::System.Action<bool> callback)
 		{
 			mPlatform.LoadFriends(this, callback);

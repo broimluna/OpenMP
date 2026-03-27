@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Kampai/Animated/AnimVert_wDistort" {
     Properties {
         _MainTex ("Base (RGB)", 2D) = "white" { }
@@ -89,7 +91,7 @@ Shader "Kampai/Animated/AnimVert_wDistort" {
                 float3 noise = sin(dotProd * frequency) * amplitude * v.normal;
                 
                 v.vertex.xyz += noise;
-                o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+                o.pos = UnityObjectToClipPos(v.vertex);
                 
                 // 3. Calcul des UVs pour le Flow Mapping (décalage infini)
                 // Note : Le scale multiplicateur bizarre de -0.1 vient du code d'origine
@@ -164,7 +166,7 @@ Shader "Kampai/Animated/AnimVert_wDistort" {
                 float2 decodedFlowDir = (flowDir - 0.5) * 2.0;
                 
                 // Pas de déformation des vertex ici
-                o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+                o.pos = UnityObjectToClipPos(v.vertex);
                 
                 float2 baseUV = TRANSFORM_TEX(v.uv0, _MainTex) * -0.1;
                 float timeVar = frac(_Time.x * 3.0);

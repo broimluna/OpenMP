@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: 562db7e8cb6500c4bb688b0e722c9ead
+guid: c6a799e5d141bbe4fa66be2b07fd7e72
 timeCreated: 1773540767
 licenseType: Free
 NativeFormatImporter:
-  name:
-  userData:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
   assetBundleName: costume_base.med.unity3d
-  assetBundleVariant:
+  assetBundleVariant: 

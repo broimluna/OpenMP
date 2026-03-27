@@ -66,6 +66,7 @@ namespace Kampai.UI.View
 			global::UnityEngine.Canvas canvas = gameObject.AddComponent<global::UnityEngine.Canvas>();
 			canvas.overrideSorting = true;
 			canvas.sortingOrder = 1;
+			canvas.additionalShaderChannels |= global::UnityEngine.AdditionalCanvasShaderChannels.TexCoord1;
 			global::UnityEngine.RectTransform rectTransform = gameObject.transform as global::UnityEngine.RectTransform;
 			if (rectTransform != null)
 			{
@@ -85,6 +86,7 @@ namespace Kampai.UI.View
 			global::UnityEngine.Canvas canvas = canvasGO.AddComponent<global::UnityEngine.Canvas>();
 			canvas.renderMode = renderMode;
 			canvas.planeDistance = 25f;
+			canvas.additionalShaderChannels |= global::UnityEngine.AdditionalCanvasShaderChannels.TexCoord1;
 			if (worldCamera != null)
 			{
 				canvas.worldCamera = worldCamera;
